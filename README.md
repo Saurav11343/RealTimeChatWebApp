@@ -47,28 +47,50 @@ deployed online.
 
 ## Project Structure
 
-``` text
+```txt
 RealTimeChatWebApp/
+│
 ├── frontend/
 │   ├── src/
 │   │   ├── api/
+│   │   │   └── axios.js
+│   │   │
 │   │   ├── components/
+│   │   │   └── ui/
+│   │   │
 │   │   ├── pages/
+│   │   │   ├── Welcome.jsx
+│   │   │   ├── Login.jsx
+│   │   │   ├── Register.jsx
+│   │   │   └── Chat.jsx
+│   │   │
 │   │   ├── routes/
+│   │   │   └── AppRoutes.jsx
+│   │   │
 │   │   ├── validations/
+│   │   │   └── auth.validation.js
+│   │   │
 │   │   ├── App.jsx
-│   │   └── main.jsx
+│   │   ├── main.jsx
+│   │   └── index.css
+│   │
+│   ├── .env
 │   └── package.json
 │
-└── backend/
-    ├── config/
-    ├── controllers/
-    ├── routes/
-    ├── app.js
-    ├── server.js
-    └── package.json
-```
-
+├── backend/
+│   ├── config/
+│   │   └── env.js
+│   │
+│   ├── controllers/
+│   │   └── name.controller.js
+│   │
+│   ├── routes/
+│   │   └── name.route.js
+│   │
+│   ├── app.js
+│   ├── server.js
+│   ├── .env
+│   └── package.json
 ## Current Demo
 
 The frontend sends a user-entered name to the backend using Axios.
