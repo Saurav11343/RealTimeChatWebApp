@@ -91,6 +91,7 @@ RealTimeChatWebApp/
 │   ├── server.js
 │   ├── .env
 │   └── package.json
+```
 ## Current Demo
 
 The frontend sends a user-entered name to the backend using Axios.
